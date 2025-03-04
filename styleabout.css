@@ -1,51 +1,52 @@
-*, html{
-    margin: 0;
-    padding: 0;
+*, html {
+    margin: 0; /* Mengatur ruang di sekitar elemen */
+    padding: 0; /* Ruang kosong */
+    font-family: 'Arial';
 }
 
 body {
     background-color: #ffedd6;
 }
 
+/* Container Utama */
 .container {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 40px auto; 
     background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-    
+
+/* Navbar */
 .container-navbar {
-    background-color: rgb(255, 178, 178);
+    background-color: #ff6b6b;
     width: 100%;
-    height: 17vh;
+    padding: 15px 0;
+    border-radius: 12px 12px 0 0;
 }
 
 .ul-navbar {
     display: flex;
-    height: 100px;
     justify-content: center;
-    align-items: center;
+    gap: 30px;
+    list-style: none;
 }
 
 .li-navbar {
-    list-style-type: none;
-    padding: 20px;
-    margin: 5px;
-    color: white;
-    font-size: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s, border-radius 0.3s;
 }
 
 .li-navbar:hover {
-    background-color: rgb(255, 207, 236);
-    transition: .5s ease-in-out;
-    transition-delay: .3s;
+    background-color: #ffa6a6;
     border-radius: 8px;
 }
 
 .a-navbar {
-    color: beige;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -53,35 +54,60 @@ body {
     max-width: 800px;
     margin: 50px auto;
     background: #fff;
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+.container-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.container-content li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
 h1 {
-    color: #000000;
+    color: #222;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #444;
+    margin-top: 25px;
 }
 
 p {
-    line-height: 1.6;
-    font-size: 16px;
+    line-height: 2;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #ff5722;
+/* Gaya untuk gambar */
+.img-content {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 70%; /* Menyesuaikan ukuran gambar agar lebih proporsional */
+    margin: 20px auto;
+    border-radius: 8px;
 }
 
 .container-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    background-color: #ff6b6b;
+    border-radius: 0 0 12px 12px;
+    margin-top: 40px;
+    text-align: center;
 }
-
