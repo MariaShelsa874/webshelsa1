@@ -22,15 +22,50 @@
         <!-- NAVIGATION BAR SELESAI -->
         
         <!-- CONTENT 1 -->
-        <div class="container-content">
-            <h1>Kontak Saya</h1>
-            <p>Silakan hubungi saya melalui media sosial atau email di bawah ini:</p>
-            <ul>
-                <li><strong>WhatsApp:</strong> <a href="https://wa.me/6281315481383" target="_blank">081315481383</a></li>
-                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/mariashelsa_" target="_blank">@mariashelsa_</a></li>
-                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/maria.shelsavionda" target="_blank">maria.shelsavionda</a></li>  
+        <!-- FORMULIR KONTAK -->
+        <div class="contact-form">
+            <form>
+                <fieldset>
+                    <legend>Hubungi Saya</legend>
+
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" name="nama" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="tanggal">Tanggal:</label>
+                    <input type="date" name="tanggal" required>
+
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+                    <label for="kategori">Kategori Pesan:</label>
+                    <select name="kategori">
+                        <option value="umum" selected>Umum</option>
+                        <option value="kerjasama">Kerjasama</option>
+                    </select>
+
+                    <p>Jenis Kelamin:</p>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" value="Pria">
+                        <label for="pria">Pria</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="setuju" required>
+                        <label for="setuju">Saya menyetujui kebijakan privasi</label>
+                    </div>
+
+                    <button type="submit">Kirim</button>
+                </fieldset>
+            </form>
         </div>
-        <!-- CONTENT 1 END -->
+        <!-- FORMULIR KONTAK SELESAI -->
 
         <!-- FOOTER -->
         <div class="container-footer">
